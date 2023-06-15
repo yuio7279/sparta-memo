@@ -15,8 +15,10 @@ public class Memo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(name = "username", nullable = false)
     private String username;
+
     @Column(name = "contents", nullable = false, length = 500)
     private String contents;
 
